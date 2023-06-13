@@ -13,7 +13,10 @@ class SecondViewController: CommonClass {
         super.viewDidLoad()
 
         commonFunction()
-
+        
+        let viewController = ViewController(test: "13")
+        viewController.testMethod()
+        
     }
 
     var test: String
