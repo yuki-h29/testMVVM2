@@ -9,6 +9,16 @@ import UIKit
 
 class SecondViewController: CommonClass {
 
+    @IBAction func pushTest(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let secondViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
+            print("Failed to instantiate ViewController")
+            return
+        }
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
