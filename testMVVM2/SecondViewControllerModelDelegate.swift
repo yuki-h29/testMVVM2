@@ -8,5 +8,6 @@
 import Foundation
 
 protocol SecondViewControllerModelDelegate {
+    //didSetのテスト関数
     func dataHasUpdated()
 }

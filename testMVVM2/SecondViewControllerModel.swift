@@ -10,10 +10,20 @@ import Foundation
 class SecondViewControllerModel {
     var delegate: SecondViewControllerModelDelegate?
     
+    //通常の呼びかた
     func updateData() {
-        // data update logic here...
-        
-        // Notify the delegate that the data has been updated
         delegate?.dataHasUpdated()
+    }
+    
+    /*
+    let model = SecondViewControllerModel()
+    model.data = "New Value"
+    */
+    
+    //↑のようなコードでdataの値が変更されるとdidSetが呼ばれる
+    var data: String = "" {
+        didSet {
+            delegate?.dataHasUpdated()
+        }
     }
 }
