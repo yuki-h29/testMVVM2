@@ -12,6 +12,7 @@ class SecondViewController: UIViewController,
                             NavigationProtocol {
     
     var model: SecondViewControllerModel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
