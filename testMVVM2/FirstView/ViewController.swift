@@ -15,14 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemTeal
+
         
-        guard let myView = Bundle.main.loadNibNamed("SecondViewController", owner: nil,options: nil)?.first as? UIView else {
-            // Handle error
-            return
-        }
+        let viewController = CommonClass()
+        viewController.commonFunction()
         
-        myView.frame = self.view.bounds // メインビューのサイズに合わせる
-        self.view.addSubview(myView)
+        
     }
     
     

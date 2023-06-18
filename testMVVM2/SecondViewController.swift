@@ -11,6 +11,7 @@ class SecondViewController: UIViewController,
                             SecondViewControllerModelDelegate {
     
     var model: SecondViewControllerModel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
