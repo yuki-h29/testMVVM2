@@ -22,6 +22,9 @@
 		2354C4DF2A389EDC0091A511 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2354C4DD2A389EDC0091A511 /* SecondViewController.xib */; };
 		23E8C6422A38A2E900C5CE1B /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E8C6412A38A2E900C5CE1B /* CustomField.swift */; };
 		23E8C6442A38B0DF00C5CE1B /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E8C6432A38B0DF00C5CE1B /* CommonClass.swift */; };
+		23F3362C2A3E79A400D15F06 /* SecondViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3362B2A3E79A400D15F06 /* SecondViewControllerModel.swift */; };
+		23F3362E2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3362D2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift */; };
+		23F336302A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3362F2A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		2354C4DD2A389EDC0091A511 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		23E8C6412A38A2E900C5CE1B /* CustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 		23E8C6432A38B0DF00C5CE1B /* CommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
+		23F3362B2A3E79A400D15F06 /* SecondViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerModel.swift; sourceTree = "<group>"; };
+		23F3362D2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerModelDelegate.swift; sourceTree = "<group>"; };
+		23F3362F2A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondViewController+ModelDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,9 @@
 			children = (
 				2354C4DC2A389EDC0091A511 /* SecondViewController.swift */,
 				2354C4DD2A389EDC0091A511 /* SecondViewController.xib */,
+				23F3362B2A3E79A400D15F06 /* SecondViewControllerModel.swift */,
+				23F3362D2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift */,
+				23F3362F2A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift */,
 			);
 			name = SecondView;
 			sourceTree = "<group>";
@@ -302,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2354C4DE2A389EDC0091A511 /* SecondViewController.swift in Sources */,
+				23F3362E2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift in Sources */,
+				23F336302A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift in Sources */,
 				2354C4DB2A3891510091A511 /* ViewControllerDelegate.swift in Sources */,
 				23E8C6422A38A2E900C5CE1B /* CustomField.swift in Sources */,
+				23F3362C2A3E79A400D15F06 /* SecondViewControllerModel.swift in Sources */,
 				23E8C6442A38B0DF00C5CE1B /* CommonClass.swift in Sources */,
 				2354C4D92A3891280091A511 /* ViewControllerModel.swift in Sources */,
 				2354C4AD2A3890C70091A511 /* ViewController.swift in Sources */,
