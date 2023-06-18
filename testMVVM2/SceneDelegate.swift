@@ -19,23 +19,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         // UIWindowのインスタンスを作成します。
         let window = UIWindow(windowScene: windowScene)
-        
         // UINavigationControllerのインスタンスを作成します。
         let navigationController = UINavigationController()
         
         let model = SecondViewControllerModel()
         // ViewControllerのインスタンスを作成します。
         let viewController = SecondViewController(model: model)
-        
         // navigationControllerのrootViewControllerをviewControllerに設定します。
         navigationController.viewControllers = [viewController]
-        
         // windowのrootViewControllerをnavigationControllerに設定します。
         window.rootViewController = navigationController
-        
         // このウィンドウをシーンのウィンドウとして保存します。
         self.window = window
-        
         // ウィンドウを表示します。
         window.makeKeyAndVisible()
     }

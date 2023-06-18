@@ -25,6 +25,13 @@
 		23F3362C2A3E79A400D15F06 /* SecondViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3362B2A3E79A400D15F06 /* SecondViewControllerModel.swift */; };
 		23F3362E2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3362D2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift */; };
 		23F336302A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3362F2A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift */; };
+		23F336332A3EE5E700D15F06 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F336312A3EE5E700D15F06 /* ThirdViewController.swift */; };
+		23F336342A3EE5E700D15F06 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F336322A3EE5E700D15F06 /* ThirdViewController.xib */; };
+		23F336372A3EE63300D15F06 /* ThirdViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F336362A3EE63300D15F06 /* ThirdViewControllerModel.swift */; };
+		23F336392A3EE64B00D15F06 /* ThirdViewControllerModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F336382A3EE64B00D15F06 /* ThirdViewControllerModelDelegate.swift */; };
+		23F3363B2A3EE66B00D15F06 /* ThirdViewController+ModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3363A2A3EE66B00D15F06 /* ThirdViewController+ModelDelegate.swift */; };
+		23F3363D2A3EEB0900D15F06 /* CommonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3363C2A3EEB0900D15F06 /* CommonProtocol.swift */; };
+		23F3363F2A3F026300D15F06 /* CommonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3363E2A3F026300D15F06 /* CommonDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		23F3362B2A3E79A400D15F06 /* SecondViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerModel.swift; sourceTree = "<group>"; };
 		23F3362D2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerModelDelegate.swift; sourceTree = "<group>"; };
 		23F3362F2A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondViewController+ModelDelegate.swift"; sourceTree = "<group>"; };
+		23F336312A3EE5E700D15F06 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		23F336322A3EE5E700D15F06 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		23F336362A3EE63300D15F06 /* ThirdViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewControllerModel.swift; sourceTree = "<group>"; };
+		23F336382A3EE64B00D15F06 /* ThirdViewControllerModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewControllerModelDelegate.swift; sourceTree = "<group>"; };
+		23F3363A2A3EE66B00D15F06 /* ThirdViewController+ModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThirdViewController+ModelDelegate.swift"; sourceTree = "<group>"; };
+		23F3363C2A3EEB0900D15F06 /* CommonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonProtocol.swift; sourceTree = "<group>"; };
+		23F3363E2A3F026300D15F06 /* CommonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,7 @@
 				23E8C6402A38A2A700C5CE1B /* CommonClass */,
 				2354C4E12A389F200091A511 /* FirstView */,
 				2354C4E02A389EFB0091A511 /* SecondView */,
+				23F336352A3EE5F400D15F06 /* ThirdView */,
 				2354C4B12A3890C80091A511 /* Assets.xcassets */,
 				2354C4B32A3890C80091A511 /* LaunchScreen.storyboard */,
 				2354C4B62A3890C80091A511 /* Info.plist */,
@@ -174,8 +189,22 @@
 			children = (
 				23E8C6412A38A2E900C5CE1B /* CustomField.swift */,
 				23E8C6432A38B0DF00C5CE1B /* CommonClass.swift */,
+				23F3363C2A3EEB0900D15F06 /* CommonProtocol.swift */,
+				23F3363E2A3F026300D15F06 /* CommonDelegate.swift */,
 			);
 			name = CommonClass;
+			sourceTree = "<group>";
+		};
+		23F336352A3EE5F400D15F06 /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+				23F336312A3EE5E700D15F06 /* ThirdViewController.swift */,
+				23F336322A3EE5E700D15F06 /* ThirdViewController.xib */,
+				23F336362A3EE63300D15F06 /* ThirdViewControllerModel.swift */,
+				23F336382A3EE64B00D15F06 /* ThirdViewControllerModelDelegate.swift */,
+				23F3363A2A3EE66B00D15F06 /* ThirdViewController+ModelDelegate.swift */,
+			);
+			name = ThirdView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +314,7 @@
 				2354C4DF2A389EDC0091A511 /* SecondViewController.xib in Resources */,
 				2354C4B52A3890C80091A511 /* LaunchScreen.storyboard in Resources */,
 				2354C4B22A3890C80091A511 /* Assets.xcassets in Resources */,
+				23F336342A3EE5E700D15F06 /* ThirdViewController.xib in Resources */,
 				2354C4B02A3890C70091A511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,17 +340,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F3363B2A3EE66B00D15F06 /* ThirdViewController+ModelDelegate.swift in Sources */,
 				2354C4DE2A389EDC0091A511 /* SecondViewController.swift in Sources */,
 				23F3362E2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift in Sources */,
 				23F336302A3E79E600D15F06 /* SecondViewController+ModelDelegate.swift in Sources */,
+				23F336392A3EE64B00D15F06 /* ThirdViewControllerModelDelegate.swift in Sources */,
 				2354C4DB2A3891510091A511 /* ViewControllerDelegate.swift in Sources */,
 				23E8C6422A38A2E900C5CE1B /* CustomField.swift in Sources */,
 				23F3362C2A3E79A400D15F06 /* SecondViewControllerModel.swift in Sources */,
 				23E8C6442A38B0DF00C5CE1B /* CommonClass.swift in Sources */,
+				23F336372A3EE63300D15F06 /* ThirdViewControllerModel.swift in Sources */,
+				23F3363D2A3EEB0900D15F06 /* CommonProtocol.swift in Sources */,
 				2354C4D92A3891280091A511 /* ViewControllerModel.swift in Sources */,
 				2354C4AD2A3890C70091A511 /* ViewController.swift in Sources */,
 				2354C4A92A3890C70091A511 /* AppDelegate.swift in Sources */,
+				23F336332A3EE5E700D15F06 /* ThirdViewController.swift in Sources */,
 				2354C4AB2A3890C70091A511 /* SceneDelegate.swift in Sources */,
+				23F3363F2A3F026300D15F06 /* CommonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
