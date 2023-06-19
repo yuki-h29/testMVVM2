@@ -10,7 +10,10 @@ import UIKit
 //CommonViewControllerProtocol
 protocol CommonViewControllerProtocol {
     
-    // 何かを記述
+}
+
+protocol CommonViewModelProtocol {
+    func performAsyncTask(with viewController: UIViewController, errorMessage: String)
 }
 
 //NavigationProtocol
@@ -23,3 +26,4 @@ protocol NavigationProtocol {
     // fetchDataの例
     func fetchData() async throws -> Data
 }
+

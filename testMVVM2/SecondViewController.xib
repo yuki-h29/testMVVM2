@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-jr-kYz">
-                    <rect key="frame" x="16" y="40" width="288" height="144.5"/>
+                    <rect key="frame" x="16" y="40" width="288" height="65"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="7ZR-Ar-Aef">
                             <rect key="frame" x="0.0" y="0.0" width="288" height="65"/>
@@ -59,22 +59,6 @@
                                     </constraints>
                                 </stackView>
                             </subviews>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VnB-Lo-h2U">
-                            <rect key="frame" x="0.0" y="110" width="288" height="34.5"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5L-44-BqH">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="34.5"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                    <connections>
-                                        <action selector="pushTest:" destination="-1" eventType="touchUpInside" id="bEG-IT-WIc"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="U9y-Jx-9iw"/>
-                            </constraints>
                         </stackView>
                     </subviews>
                 </stackView>
