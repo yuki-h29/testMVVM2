@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,34 +15,122 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22X-uV-biX">
-                    <rect key="frame" x="102" y="188" width="190" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="NavigationContoroller"/>
-                    <connections>
-                        <action selector="pushPop:" destination="-1" eventType="touchUpInside" id="7Bf-IK-Bve"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa5-Zg-Gav">
-                    <rect key="frame" x="112" y="258" width="169" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="NavigationProtocol"/>
-                    <connections>
-                        <action selector="pushNavigationProtocol:" destination="-1" eventType="touchUpInside" id="Lni-hi-4Ug"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-rV-G3g">
+                    <rect key="frame" x="37.5" y="221.5" width="300" height="224"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UsX-RJ-Hds">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="81"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22X-uV-biX" customClass="CustomButton" customModule="testMVVM2" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="46"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" image="お天気　雨のフリーアイコン" title="NavigationContoroller" buttonSize="medium"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="pushPop:" destination="-1" eventType="touchUpInside" id="7Bf-IK-Bve"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_illust_101_1S" translatesAutoresizingMaskIntoConstraints="NO" id="WGe-B3-xx6">
+                                    <rect key="frame" x="0.0" y="46" width="300" height="35"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="WGe-B3-xx6" firstAttribute="leading" secondItem="UsX-RJ-Hds" secondAttribute="leading" id="5d3-wJ-og7"/>
+                                <constraint firstAttribute="trailing" secondItem="WGe-B3-xx6" secondAttribute="trailing" id="Oy4-vc-Pz4"/>
+                                <constraint firstItem="22X-uV-biX" firstAttribute="leading" secondItem="UsX-RJ-Hds" secondAttribute="leading" id="hjW-pM-K4z"/>
+                                <constraint firstAttribute="trailing" secondItem="22X-uV-biX" secondAttribute="trailing" id="ifM-K5-Fgi"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r9l-an-2ea">
+                            <rect key="frame" x="0.0" y="89" width="300" height="81"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa5-Zg-Gav" customClass="CustomButton" customModule="testMVVM2" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="46"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" image="メールの無料アイコン" title="NavigationProtocol"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="pushNavigationProtocol:" destination="-1" eventType="touchUpInside" id="Lni-hi-4Ug"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_illust_101_1S" translatesAutoresizingMaskIntoConstraints="NO" id="4x3-Qz-Agf">
+                                    <rect key="frame" x="0.0" y="46" width="300" height="35"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wa5-Zg-Gav" firstAttribute="leading" secondItem="r9l-an-2ea" secondAttribute="leading" id="MaY-mI-Ij7"/>
+                                <constraint firstAttribute="trailing" secondItem="wa5-Zg-Gav" secondAttribute="trailing" id="Zod-6Z-VVd"/>
+                                <constraint firstAttribute="trailing" secondItem="4x3-Qz-Agf" secondAttribute="trailing" id="jEA-a5-0BI"/>
+                                <constraint firstItem="4x3-Qz-Agf" firstAttribute="leading" secondItem="r9l-an-2ea" secondAttribute="leading" id="wwN-uQ-Qwx"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="krN-JL-AJ6">
+                            <rect key="frame" x="0.0" y="178" width="300" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttq-z9-0Ig" customClass="CustomButton" customModule="testMVVM2" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="46"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" image="読書のアイコン" title="testButton"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ttq-z9-0Ig" secondAttribute="trailing" id="TOW-A7-b4m"/>
+                                <constraint firstItem="ttq-z9-0Ig" firstAttribute="leading" secondItem="krN-JL-AJ6" secondAttribute="leading" id="aQ7-hl-SdU"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="krN-JL-AJ6" secondAttribute="trailing" id="Cvv-3t-9Tk"/>
+                        <constraint firstAttribute="trailing" secondItem="UsX-RJ-Hds" secondAttribute="trailing" id="Ed4-B2-5lA"/>
+                        <constraint firstAttribute="trailing" secondItem="r9l-an-2ea" secondAttribute="trailing" id="OS2-EJ-8vB"/>
+                        <constraint firstItem="krN-JL-AJ6" firstAttribute="leading" secondItem="uhl-rV-G3g" secondAttribute="leading" id="RTj-L1-76P"/>
+                        <constraint firstItem="r9l-an-2ea" firstAttribute="leading" secondItem="uhl-rV-G3g" secondAttribute="leading" id="W0O-Ir-flV"/>
+                        <constraint firstItem="UsX-RJ-Hds" firstAttribute="leading" secondItem="uhl-rV-G3g" secondAttribute="leading" id="keA-3M-4cr"/>
+                        <constraint firstAttribute="width" constant="300" id="xkv-gc-X6G"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="79" y="-12"/>
+            <constraints>
+                <constraint firstItem="uhl-rV-G3g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P5B-KL-btZ"/>
+                <constraint firstItem="uhl-rV-G3g" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vak-pM-xs1"/>
+            </constraints>
+            <point key="canvasLocation" x="77.599999999999994" y="-12.143928035982009"/>
         </view>
     </objects>
+    <designables>
+        <designable name="22X-uV-biX">
+            <size key="intrinsicContentSize" width="221.5" height="46"/>
+        </designable>
+        <designable name="ttq-z9-0Ig">
+            <size key="intrinsicContentSize" width="136" height="46"/>
+        </designable>
+        <designable name="wa5-Zg-Gav">
+            <size key="intrinsicContentSize" width="200.5" height="46"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="b_illust_101_1S" width="300" height="35"/>
+        <image name="お天気　雨のフリーアイコン" width="32" height="32"/>
+        <image name="メールの無料アイコン" width="32" height="32"/>
+        <image name="読書のアイコン" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
