@@ -5,69 +5,55 @@
 //  Created by 平野裕貴 on 2023/06/13.
 //
 
+// ViewController.swift
 import UIKit
 
-class SecondViewController: UIViewController,
-                            SecondViewControllerModelDelegate,
-                            NavigationProtocol {
+class SecondViewController: UIViewController ,
+                            NavigationProtocol{
     
     var model: SecondViewControllerModel!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //通常の呼び方
+        
+        // データ更新要求
         model.updateData()
         
-        //dataの値を変更して、didSetを呼ぶ 
+        // 新たなモデルを生成し、データを更新
         let model = SecondViewControllerModel()
         model.delegate = self
         model.data = "New Value"
+        
     }
     
-    //初期化
     init(model: SecondViewControllerModel) {
-        super.init(nibName: "SecondViewController", bundle: nil)
+        super.init(nibName: nil, bundle: nil)
         self.model = model
         self.model.delegate = self
     }
     
-    //ストーリーボードやXIBファイルを使用する場合は、このメソッドの実装が必要
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //データが変更されたとき、didSetから呼ばれる
-    func dataHasUpdated() {
-        print("dataの値が変更されました。")
+    //ThirdViewControllerにVC+ModelDelegate内の関数で遷移する
+    @IBAction func pushNavigationButton(_ sender: Any) {
+        // self.pushNextView() MVVMとしては↓で呼び出すのが正しい
+        model.requestViewTransitionNavigation()
     }
     
-    //NavigationControllerを使って遷移する
-    @IBAction func pushButton(_ sender: Any) {
+    //ThirdviewControllerにCommonクラスを使って遷移する
+    @IBAction func pudhRootViewButton(_ sender: Any) {
         let model = ThirdViewControllerModel()
-        let thirdViewController = ThirdViewController(model: model)
-        self.navigationController?.pushViewController(thirdViewController,
-                                                      animated: true)
-    }
-    
-    //NavigationProtocolの関数を使って遷移する
-    @IBAction func pushRootView(_ sender: Any) {
-        
-        let model = ThirdViewControllerModel()
-        let thirdViewController = ThirdViewController(model: model)
-
-        pushViewController(thirdViewController, animated: true)
+        let ThirdViewController = ThirdViewController(model: model)
+        self.pushViewController(ThirdViewController, animated: true)
     }
     
     //モーダルで遷移する
-    @IBAction func pushPresent(_ sender: Any) {
-        
-        let model = ThirdViewControllerModel()
-        let thirdViewController = ThirdViewController(model: model)
-        thirdViewController.modalPresentationStyle = .overFullScreen
-        self.present(thirdViewController, animated: true, completion: nil)
-        
+    @IBAction func pushPresentButton(_ sender: Any) {
+        //self.modalNextView() MVVMとしては↓で呼び出すのが正しい
+        model.requestViewTransitionModel()
     }
+    
     
 }

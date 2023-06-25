@@ -68,7 +68,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Navigation"/>
                     <connections>
-                        <action selector="pushButton:" destination="-1" eventType="touchUpInside" id="4wd-Qj-1dy"/>
+                        <action selector="pushNavigationButton:" destination="-1" eventType="touchUpInside" id="4lE-Az-NDb"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-5b-dcH">
@@ -77,7 +77,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="rootView"/>
                     <connections>
-                        <action selector="pushRootView:" destination="-1" eventType="touchUpInside" id="qCt-E8-EW1"/>
+                        <action selector="pudhRootViewButton:" destination="-1" eventType="touchUpInside" id="Lj0-3b-FWu"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I37-sd-9KT">
@@ -86,7 +86,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="present"/>
                     <connections>
-                        <action selector="pushPresent:" destination="-1" eventType="touchUpInside" id="SCT-l9-TLF"/>
+                        <action selector="pushPresentButton:" destination="-1" eventType="touchUpInside" id="LFB-v4-39p"/>
                     </connections>
                 </button>
             </subviews>

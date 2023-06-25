@@ -5,22 +5,28 @@
 //  Created by 平野裕貴 on 2023/06/18.
 //
 
+// ViewControllerModel.swift
 import Foundation
 
 class SecondViewControllerModel {
     var delegate: SecondViewControllerModelDelegate?
     
-    //通常の呼びかた
+    //データの更新要求
     func updateData() {
         delegate?.dataHasUpdated()
     }
     
-    /*
-    let model = SecondViewControllerModel()
-    model.data = "New Value"
-    */
+    //ナビゲーションで画面遷移の要求
+    func requestViewTransitionNavigation() {
+        delegate?.pushNextView()
+    }
     
-    //↑のようなコードでdataの値が変更されるとdidSetが呼ばれる
+    //モーダルでの画面遷移の要求
+    func requestViewTransitionModel() {
+        delegate?.modalNextView()
+    }
+    
+    //dataの値が変更されるとDelegateに通知
     var data: String = "" {
         didSet {
             delegate?.dataHasUpdated()
