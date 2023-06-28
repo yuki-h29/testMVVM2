@@ -16,3 +16,4 @@ protocol SecondViewControllerModelDelegate {
     //次の画面をモーダルで開く
     func modalNextView()
 }
+

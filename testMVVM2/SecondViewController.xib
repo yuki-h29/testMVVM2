@@ -89,6 +89,15 @@
                         <action selector="pushPresentButton:" destination="-1" eventType="touchUpInside" id="LFB-v4-39p"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLl-HM-5Ig">
+                    <rect key="frame" x="99" y="410" width="124" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="FourthView"/>
+                    <connections>
+                        <action selector="pushFourthViewButton:" destination="-1" eventType="touchUpInside" id="Rjc-hr-nBF"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

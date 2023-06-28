@@ -27,7 +27,7 @@ class ThirdViewController: UIViewController,
         let errorMessage = "Data fetch timeout" // エラーメッセージ
         
         //非同期処理　APIからデータを読み込めたら遷移　ダメならエラーメッセージ
-        //model?.performAsyncTask(with: nextViewController, errorMessage: errorMessage)
+        model?.performAsyncTask(with: nextViewController, errorMessage: errorMessage)
         
     }
     

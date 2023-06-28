@@ -12,6 +12,7 @@ class SecondViewController: UIViewController ,
                             NavigationProtocol{
     
     var model: SecondViewControllerModel!
+    var personDat: [Person]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,5 +56,13 @@ class SecondViewController: UIViewController ,
         model.requestViewTransitionModel()
     }
     
+    @IBAction func pushFourthViewButton(_ sender: Any) {
+        
+        let people = [Person(name: "John", age: 30), Person(name: "Emma", age: 25)]
+        let model = FourthViewControllerModel()
+        let FourthViewController = FourthViewController(model: model,people: people)
+        self.pushViewController(FourthViewController, animated: true)
+        
+    }
     
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235168CC2A4CC53200C91D2D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235168CA2A4CC53200C91D2D /* FourthViewController.swift */; };
+		235168CD2A4CC53200C91D2D /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235168CB2A4CC53200C91D2D /* FourthViewController.xib */; };
+		235168CF2A4CC54600C91D2D /* FourthViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235168CE2A4CC54600C91D2D /* FourthViewControllerModel.swift */; };
+		235168D12A4CC55900C91D2D /* FourthViewControllerModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235168D02A4CC55900C91D2D /* FourthViewControllerModelDelegate.swift */; };
+		235168D32A4CC57300C91D2D /* FourthViewController+ModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235168D22A4CC57300C91D2D /* FourthViewController+ModelDelegate.swift */; };
+		235168D62A4CCC1000C91D2D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235168D52A4CCC1000C91D2D /* Person.swift */; };
 		2354C4A92A3890C70091A511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354C4A82A3890C70091A511 /* AppDelegate.swift */; };
 		2354C4AB2A3890C70091A511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354C4AA2A3890C70091A511 /* SceneDelegate.swift */; };
 		2354C4AD2A3890C70091A511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354C4AC2A3890C70091A511 /* ViewController.swift */; };
@@ -53,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		235168CA2A4CC53200C91D2D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		235168CB2A4CC53200C91D2D /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		235168CE2A4CC54600C91D2D /* FourthViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewControllerModel.swift; sourceTree = "<group>"; };
+		235168D02A4CC55900C91D2D /* FourthViewControllerModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewControllerModelDelegate.swift; sourceTree = "<group>"; };
+		235168D22A4CC57300C91D2D /* FourthViewController+ModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FourthViewController+ModelDelegate.swift"; sourceTree = "<group>"; };
+		235168D52A4CCC1000C91D2D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2354C4A52A3890C70091A511 /* testMVVM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testMVVM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2354C4A82A3890C70091A511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2354C4AA2A3890C70091A511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +122,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235168C92A4CC4B100C91D2D /* FourthView */ = {
+			isa = PBXGroup;
+			children = (
+				235168CA2A4CC53200C91D2D /* FourthViewController.swift */,
+				235168CE2A4CC54600C91D2D /* FourthViewControllerModel.swift */,
+				235168D02A4CC55900C91D2D /* FourthViewControllerModelDelegate.swift */,
+				235168D22A4CC57300C91D2D /* FourthViewController+ModelDelegate.swift */,
+				235168CB2A4CC53200C91D2D /* FourthViewController.xib */,
+			);
+			name = FourthView;
+			sourceTree = "<group>";
+		};
+		235168D42A4CCBCF00C91D2D /* CommonStruct */ = {
+			isa = PBXGroup;
+			children = (
+				235168D52A4CCC1000C91D2D /* Person.swift */,
+			);
+			name = CommonStruct;
+			sourceTree = "<group>";
+		};
 		2354C49C2A3890C70091A511 = {
 			isa = PBXGroup;
 			children = (
@@ -136,9 +168,11 @@
 				2354C4A82A3890C70091A511 /* AppDelegate.swift */,
 				2354C4AA2A3890C70091A511 /* SceneDelegate.swift */,
 				23E8C6402A38A2A700C5CE1B /* CommonClass */,
+				235168D42A4CCBCF00C91D2D /* CommonStruct */,
 				2354C4E12A389F200091A511 /* FirstView */,
 				2354C4E02A389EFB0091A511 /* SecondView */,
 				23F336352A3EE5F400D15F06 /* ThirdView */,
+				235168C92A4CC4B100C91D2D /* FourthView */,
 				2354C4B12A3890C80091A511 /* Assets.xcassets */,
 				2354C4B32A3890C80091A511 /* LaunchScreen.storyboard */,
 				2354C4B62A3890C80091A511 /* Info.plist */,
@@ -318,6 +352,7 @@
 				2354C4B52A3890C80091A511 /* LaunchScreen.storyboard in Resources */,
 				2354C4B22A3890C80091A511 /* Assets.xcassets in Resources */,
 				23F336342A3EE5E700D15F06 /* ThirdViewController.xib in Resources */,
+				235168CD2A4CC53200C91D2D /* FourthViewController.xib in Resources */,
 				2354C4B02A3890C70091A511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,15 +380,20 @@
 			files = (
 				23F3363B2A3EE66B00D15F06 /* ThirdViewController+ModelDelegate.swift in Sources */,
 				2354C4DE2A389EDC0091A511 /* SecondViewController.swift in Sources */,
+				235168D12A4CC55900C91D2D /* FourthViewControllerModelDelegate.swift in Sources */,
 				23E557532A41EC1500600942 /* CustomButton.swift in Sources */,
+				235168CC2A4CC53200C91D2D /* FourthViewController.swift in Sources */,
 				23F3362E2A3E79BD00D15F06 /* SecondViewControllerModelDelegate.swift in Sources */,
 				23F336302A3E79E600D15F06 /* SecondViewControllerViewModel.swift in Sources */,
+				235168D32A4CC57300C91D2D /* FourthViewController+ModelDelegate.swift in Sources */,
+				235168CF2A4CC54600C91D2D /* FourthViewControllerModel.swift in Sources */,
 				23F336392A3EE64B00D15F06 /* ThirdViewControllerModelDelegate.swift in Sources */,
 				2354C4DB2A3891510091A511 /* ViewControllerDelegate.swift in Sources */,
 				23E8C6422A38A2E900C5CE1B /* CustomField.swift in Sources */,
 				23F3362C2A3E79A400D15F06 /* SecondViewControllerModel.swift in Sources */,
 				23E8C6442A38B0DF00C5CE1B /* CommonClass.swift in Sources */,
 				23F336372A3EE63300D15F06 /* ThirdViewControllerModel.swift in Sources */,
+				235168D62A4CCC1000C91D2D /* Person.swift in Sources */,
 				23F3363D2A3EEB0900D15F06 /* CommonProtocol.swift in Sources */,
 				2354C4D92A3891280091A511 /* ViewControllerModel.swift in Sources */,
 				2354C4AD2A3890C70091A511 /* ViewController.swift in Sources */,
